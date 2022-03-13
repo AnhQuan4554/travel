@@ -1,822 +1,510 @@
-.header{
-    z-index: 20;
-  //  position: fixed;
-    width: 100%;
-    top: 0;
-}
-.header__top-wrap{
- //   position: relative;
-     background-color: var(--color-black-popular);
-     height: var(--height-navbar-top);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font chu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,700&display=swap" rel="stylesheet">
+    <!-- font chu -->
+    <link rel="stylesheet" href="./css/respon.css">
 
- }
-.header__top{
- display: flex;
- align-items: center;
- justify-content: space-between;
- height: var(--height-navbar-top);
-}
-.header__top-list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.header__top-item{
-   
+    <title>Document</title>
+</head>
+<body>
+     <header >
+        <nav class="header">
+            <!-- start header top -->
+            <div class="header__top-wrap">
+              <div class="grid wide">
+                <div class="header__top">
+                    <ul class="header__top-list">
+                        <li class="header__top-item">
+                            <a href="" class=" top__left iteam__pay">
+                                <i class='bx bx-credit-card-front'></i>
+                                Payment Options
+                            </a>
+                        </li>
+                        <li class="header__top-item">
+                            <a href="" class=" top__left iteam__Terms">
+                                <i class='bx bx-calendar-check'></i>
+                                Terms Conditions
+                            </a>
+                        </li>
+                        <li class="header__top-item">
+                            <a href=""class="top__left">US</a>
+                        </li>
+                        <li class="header__top-item">
+                            <a href=""class="top__left">IT</a>
+                        </li>
+                        <li class="header__top-item">
+                            <a href=""class="top__left">ES</a>
+                        </li>
+                    </ul>
+                    <ul class="header__top-list">
+                        <li class="header__top-item">
+                            <a href="" class="top__right">
+                                My Bookings
+                            </a>
+                        </li>
+                        <li class="header__top-item">
+                           <!--  <i class='bx bx-envelope ' ></i> -->
+                           <div class="iteam__inve-and-num">
+                               <img class="bx-envelope" src="./img/envelop.png" alt="">
+                                <span class="evenlope-number">3</span>
+                                <!-- bảng khi hover vào hiện ra -->
+                                <ul class="evenlope__respon-list">
+                                    <li class="evenlope__respon-item">
+                                        <img src="./img/travel1.jpg" alt="" class="evenlope__respon-item-img">
+                                        <div class="evenlope__respon-item-text">
+                                           
+                                            <a href="" class="text1">Best Travlve Plugin</a>
+                                            <a href="" class="text2">Check Peatures</a>
+                                        </div>                    
+                                    </li>
+                                    <li class="evenlope__respon-item">
+                                        <img src="./img/travel2.jpg" alt="" class="evenlope__respon-item-img">
+                                        <div class="evenlope__respon-item-text">
+                                            <a href="" class="text1">Multi Purpose</a>
+                                            <a href="" class="text2">A Lot of Demos</a>
+                                        </div>
+                                    </li>
+                                    <li class="evenlope__respon-item">
+                                        <img src="./img/travel3.jpg" alt="" class="evenlope__respon-item-img">
+                                        <div class="evenlope__respon-item-text">
+                                            <a href="" class="text1">No code Required</a>
+                                            <a href="" class="text2">Very Easy To Use</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                           </div>
+                        </li>
+                        <li class="header__top-item">
+                            <a href="" class="top__right">Add your Review</a>
+                        </li>
+                        <li class="header__top-item">
+                            <div class="login">
+                                <a href="" class="avatar">
+                                    <img src="./img/avatar__header.jpg" alt="">
+                                </a>
+                                <ul class="login-list">
+                                    <li class="login-iteam">
+                                        <a class="text__1" href="">My Account</a>
+                                    </li>
+                                    <li class="login-iteam">
+                                        <a class="text__2" href="">LOG IN</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+         </div>
+            <!-- end header top -->
+            <!-- start header bottom -->
+                <div class="header__bottom-wrap">
+                    <div class="grid wide">
+                        <div class="header__bottom">
+                            <div class="header__bottom__logo">
+                                <a href="" class="logo__text">
+                                    LOVE TRAVEL
+                                </a>
+                            </div>
+                            <!-- icon menu mobile -->
+                            <div class="header__bottom-menu-mobile">
+                                <i class='bx bx-menu'></i>
+                            </div>
+                            <ul class="header__bottom-list">
+                                <li class="header__bottom-iteam">
+                                    <a href="" class="header__bottom-link">HOME</a>
+                                </li>
+                                <li class="header__bottom-iteam header__bottom-list-hover">
+                                    <a href="" class="header__bottom-link  ">PACKAGES</a>
+                                    <!-- nhưng chữ khi hover vào sẽ đc xuất hiện -->
+                                    <ul class="bottom__hover-list">
+                                        <li class="bottom__hover-item">
+                                            <a href="#" class="bottom__hover-link">Seach</a>
+                                        </li>
+                                        <li class="bottom__hover-item">
+                                            <a href="#" class="bottom__hover-link">Single Package</a>
+                                        </li>
+                                        <li class="bottom__hover-item">
+                                            <a href="#" class="bottom__hover-link">Destination</a>
+                                        </li>
+                                    </ul>
+                                    <!-- kết thúc nhưng chữ khi hover vào sẽ đc xuất hiện -->
 
-    .top__left{
-        font-size: 14px;
-        color: var(--color-text);
-        margin-right: 20px;
-        
-    }
+                                </li>
+                                <li class="header__bottom-iteam header__bottom-list-hover">
+                                    <a href="" class="header__bottom-link">SHOP</a>
+                                    <!-- nhưng chữ khi hover vào sẽ đc xuất hiện -->
+                                    <ul class="bottom__hover-list">
+                                        <li class="bottom__hover-item">
+                                            <a href="#" class="bottom__hover-link">Shop</a>
+                                        </li>
+                                        <li class="bottom__hover-item">
+                                            <a href="#" class="bottom__hover-link">Cart</a>
+                                        </li>
+                                        <li class="bottom__hover-item">
+                                            <a href="#" class="bottom__hover-link">Checkout</a>
+                                        </li>
+                                        <li class="bottom__hover-item">
+                                            <a href="#" class="bottom__hover-link">My account</a>
+                                        </li>
+                                    </ul>
+                                    <!-- kết thúc nhưng chữ khi hover vào sẽ đc xuất hiện -->
+                                </li>
+                                <li class="header__bottom-iteam">
+                                    <a href="" class="header__bottom-link">ABOUT US</a>
 
-   
-    .top__right{
-        font-size: 14px;
-        color: var(--color-text);
-        margin-right: 20px;
-        
-    }
-     
-    .iteam__inve-and-num{
-        padding: 18px 0;
-        position: relative;
-        margin-right: 20px;
-       .bx-envelope{
-            display: flex;
-            width: 20px;
-        }
-        .evenlope-number{
-            position: absolute;
-            font-size: 12px;
-            width: 12px;
-            height: 14px;
-            color: var(--color-text);
-            text-align: center;
-            line-height: 14px;
-            background-color: var(--color-primari);
-            top: 12px;
-            right: -4px;
-        }
-         
-        .evenlope__respon-list{
-            display: none;
-            position: absolute;
-            right: 50%;
-            transform: translateX(50%);
-            width: 250px;
-            top:calc(100% + 10px) ;
-            animation: Fade-in ease 0.3s;
-            z-index: 2;//nếu ko border nó sẽ đè lên
-         //   transition: all 2s ease;
-            //làm mũi tên
-            &::before{
-                content: "";
-                position: absolute;
-                top: -11px;
-                left: 50%;
-                transform: translateX(-50%);
-                border-left: 10px solid transparent;
-                border-right: 10px solid transparent;
-                border-bottom: 10px var(--color-black-popular) solid;
-            }
-             //làm cầu nối
-             &::after{
-                content: "";
-                position: absolute;
-                top:-20px;
-                right: 50%;
-                width: 160px;
-                height: 28px;
-                transform: translateX(50%);
-               // background-color: #14b9d5;
-        
-            }
-           
-            .evenlope__respon-item{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 20px;
-                background-color: var(--color-black-popular);
-                &:nth-child(1){
-                    padding-bottom: 0px;
-                    
-                }
-                &:nth-child(2){
-                    padding-bottom: 0px;
-                    
-                }
-                .evenlope__respon-item-img{
-                    width: 50px;
-                }
-                .evenlope__respon-item-text{
-                    display: flex;
-                    flex: 1;
-                    margin-left: 20px;
-                   flex-direction: column;
-                    .text1{
-                        font-size: 14px;
-                    color: var(--color-text);
+                                </li>
+                                <li class="header__bottom-iteam header__bottom-list-hover">
+                                    <a href="" class="header__bottom-link">PAGE</a>
+                                     <!-- nhưng chữ khi hover vào sẽ đc xuất hiện -->
+                                     <ul class="bottom__hover-list">
+                                        <li class="bottom__hover-item">
+                                            <a href="#" class="bottom__hover-link">Best Destination</a>
+                                        </li>
+                                        <li class="bottom__hover-item">
+                                            <a href="#" class="bottom__hover-link">Staff</a>
+                                        </li>
+                                        <li class="bottom__hover-item">
+                                            <a href="#" class="bottom__hover-link">Servies</a>
+                                        </li>
+                                        <li class="bottom__hover-item">
+                                            <a href="#" class="bottom__hover-link">Prices</a>
+                                        </li>
+                                        <li class="bottom__hover-item">
+                                            <a href="#" class="bottom__hover-link">Faq</a>
+                                        </li>
+                                        <li class="bottom__hover-item">
+                                            <a href="#" class="bottom__hover-link">Contact 1</a>
+                                        </li>
+                                        <li class="bottom__hover-item">
+                                            <a href="#" class="bottom__hover-link">Comming soon</a>
+                                        </li>
+                                    </ul>
+                                    <!-- kết thúc nhưng chữ khi hover vào sẽ đc xuất hiện -->
+                                </li>
+                                <li class="header__bottom-iteam">
+                                    <a href="" class="header__bottom-link">NEWS</a>
+                                </li>
+                                <li class="header__bottom-iteam">
+                                    <a href="" class="header__bottom-link">CONTACT</a>
+                                </li>
+                                <li class="header__bottom-iteam">
+                                    <a href="" class="header__bottom-link">BOOK NOW</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-                    }
-                    .text2{
-                        margin-top: 3px;
-                        font-size: 12px;
-                    color: var(--color-text);
+            <!-- end header bottom -->
+        </nav>
+     </header>
+     <!--  content -->
+     <div class="background">
+         <div class="background__img-wrap">
 
-                    }
-                }
-            }
-        }
-    }
-    //làm xuất hiện bảng list
-  .iteam__inve-and-num:hover{
-    
- 
-    .evenlope__respon-list{
-        display: block;
-    }
-  }
-    .login{
-        width: 156px;
-        height:calc( var(--height-navbar-top) - 2px);
-       // margin-left: 20px;
-        background-color: #4a515b;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        //avatar
-        .avatar{
-            width: var(--height__avatar);
-            margin-right: 12px;
-            margin-top: 6px;
-            img{
-                width: var(--height__avatar);
-               // width: 30px;
-                min-height: 30px;
-                border-radius: 50%;
-                object-fit: cover;
-                
-            }
-        }
-        .login-list{
-          
-            .login-iteam{
-                a{
-                    color: var(--color-text);
-                    font-size: 13px;
-                    display: block;
-                }
-                a.text__2{
-                    
-                    font-size: 10px;
-                }
-            }
-        }
-    }
-}   
-
-
-//start phần icon của top__left
-.iteam__pay{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    i{
-        color: #80858c;
-        margin-right: 8px;
-        font-size: 20px;
-    }
-
-}
-.iteam__Terms{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    i{
-        color: #80858c;
-        margin-right: 8px;
-
-        font-size: 20px;
-    }
-
-}
-//end phần icon của top__left
-//START  header__bottom
-.header__bottom-wrap{
-    
-    height: var(--height-navbar-bottom);
-    min-height:var(--height-navbar-bottom) ;
-    background:#ffffff;
-       //làm border đẹp
-       &::before{
-        content: "";
-        width: 100%;
-        position: absolute;
-        background: linear-gradient(to right, #f76570 0%,#f76570 8%,#f3a46b 8%,#f3a46b 16%,#f3a46b 16%,#ffd205 16%,#ffd205 24%,#ffd205 24%,#1bbc9b 24%,#1bbc9b 25%,#1bbc9b 32%,#14b9d5 32%,#14b9d5 40%,#c377e4 40%,#c377e4 48%,#f76570 48%,#f76570 56%,#f3a46b 56%,#f3a46b 64%,#ffd205 64%,#ffd205 72%,#1bbc9b 72%,#1bbc9b 80%,#14b9d5 80%,#14b9d5 80%,#14b9d5 89%,#c377e4 89%,#c377e4 100%);
-       height: 3px;
-    }
-    .header__bottom{
-        position: relative;
-        display: flex;
-      
-        .header__bottom__logo{
-           // width: 136px;
-           margin-right: 80px;
-            .logo__text{
-                font-size: 28px;
-                line-height: var(--height-navbar-bottom);
-                color: #50565f;
-            }
-        }
-        .header__bottom-menu-mobile{
-            display: none;
-            position: absolute;
-            bottom: -26px;
-            left: 50%;
-            transform: translateX(-50%);
-            i{
-                font-size: 40px;
-            }
-        }
-        .header__bottom-list{
-           // background-color: #14b9d5;
-            display: flex;
-            flex: 1;
-            align-items: center;
-            justify-content: space-between;
-            .header__bottom-list-hover{ //liên quan đến làm cái hover ở dưới
-                position: relative;
-               &:hover{
-                .bottom__hover-list{
-                   display: block;
-                   
-                }
-               }
-               //làm cầu 
-               &::after{
-                   content: "";
-                   width: 130%;
-                   height: 30px;
-                   position: absolute;
-                   top: 100%;
-                   left: -35px;
-                   cursor: pointer;
-                   //background-color: #14b9d5;
-               }
-            }
-            .header__bottom-iteam{
-               // background-color: #ffd205;
-                text-align: center;
-               // flex: 1;
-                //làm thanh kẻ
-                border-right: 1px solid #f0eceb;
-                
-                padding-right: 20px;
-                &:last-child{
-                    padding: 2px 22px;
-                    background-color: #f3a46b;
-                    .header__bottom-link{
-                        color: #fff;
-                        font-size: 12px;
-                    }
-                    border: none;
-                }
-                .header__bottom-link{
-                  //  background-color: rebeccapurple;
-                    color: #6d7384;
-
-                }
-
-                //làm những list khi hover vào hiện ra ở navbar
-                
-                .bottom__hover-list{
-                    display: none;
-                   position: absolute;
-                   top: calc(100% + 29px);
-                    left: 0;
-                    transform: translateX(-25%);
-                   z-index: 1;
-                   width: 192px;
-                   
-                   background-color: #ffffff;
-                   left: 5px;
-                    animation: Fade-in ease 0.4s;
-                    
-                   .bottom__hover-item{
-                 padding: 0 12px;
-                     height: 48px;
-                    display:flex;
-                    align-items: center;
-                    border-bottom: 1px solid rgb(238, 232, 232);
-                    &:first-child{
-                        border-top: 1px solid rgb(238, 232, 232);
-                    
-                    }
-                    .bottom__hover-link{
-                        display: block;
-                        color: #6c7a8c;
-                    }
-                   }
-                }
+             <div class="background__img " style="background-image: url(./img/background.jpg) ">
+                     <span class="background__text-address">PARIS</span>
+                     <span class="background__text-tour">TOUR EIFFEL</span>
+                     <span class="background__text-organize">CITY <span class="organize-type">TOUR</span></span>
+                     <span class="background__text-price">1500 
+                         <span class="unit">$</span>
+                         <h3 class="back__sale">SALE</h3>
+                    </span>
+                 
+                </div>
               
-    
-            }
-        }
-    }
-}
-
-
-/* content */
-.background{
-position: relative;
- height: 618px;
- margin-bottom: 66px;
- height: 624px;
- //overflow: hidden;
-
-}
-.background__img-wrap{
-height: 100%;
-overflow: hidden;
-}
-
-.background__img{
-   height: 100%;
-    position: relative;
+                <div class="background__img-clicknext">
+                    
+                    <div  class="cick-btn">
+                        <i class='bx bxs-chevron-left'></i>
+                    </div>
+                    <div  class="cick-btn">
+                        <i class='bx bxs-chevron-right'></i>
+                    </div>
+                </div>
+         </div>
+         
+        <!--  <div class="backgounf__seach-wrap"> -->
+            
+             <div class="background__seach-top">
+                 <ul class="background__seach-top-list">
+                     <li id="seachs" class="background__seach-top-iteam ">
+                         <i class='bx bx-search'></i>
+                        <span> QUICK SEARCH</span>
+                     </li>
+                     <li class="background__seach-top-iteam active">
+                         <i class='bx bx-candles'></i>
+                        <span> ADVANCED</span>
+                     </li>   
+                 </ul>
+             </div>
+             <div class="background__seach-bottom">
+                   <div class="row ">
+                       <div class="col l-3 c-12 m-12 mobile__tablet">
  
-   /*  background: url(./background1.jpg); */
-  //  ./img/ok.jpg
-    background-size: cover;
-    background-repeat: no-repeat;
-    animation: kenburns-top linear  20s infinite;
-  //  background-position: top ,center;
-    background-position-x: 24%;
- 
-   // visibility: inherit;
-   
-        span{
-            display: block;
-            color: rgb(255, 255, 255);
-
-        }
-        .background__text-address{
-            position: absolute;
-            font-size: 3vw;    
-            
-            font-weight: 100;
-            top: 22%;
-            right:50%;
-            transform: translateX(50%);
-
-        }
-        .background__text-tour{
-            position: absolute;
-            font-size: 4vw; 
-            top:  32%;
-            right: 50%;   
-            transform: translateX(84%);
-
-        }
-        .background__text-organize{
-            position: absolute;
-            font-size: 0.8vw; 
-            top: 32%;
-            right: 28%;
-            opacity: 0.9;
-            .organize-type{
-            position: absolute;
-            font-size: 2vw;
-            left: 0;
-                opacity: 0.8;
-            } 
-        }
-        .background__text-price{
-            position: absolute;
-            font-size: 4vw;
-            top: 44%;
-            right: 30.8%;  
-            .unit{
-                position: absolute;
-                font-size: 1.5vw;
-                opacity: 0.8;
-                top: 46%;
-                right: -19px; 
-            }  
-            .back__sale{
-                font-size: 1vw;
-                font-weight: 100;
-                background-color: #f3a46b;
-                width: 4vw;
-                height: 1.4vw;
-                text-align: center;
-                line-height: 1.4vw;
-                position: absolute;
-                bottom: 33%;
-                left: -52%;
-            }
-        }
-    
-}
-.background__img-clicknext{
-    width: 100%;
-   // background-color: red;
-    position: absolute;
-    top: 50%;
-    display: flex;
-    align-items: center;
-    transform: translateY(-50%);
-    justify-content: space-between;
-    padding: 0 20px;
-    .cick-btn{
-        text-align:    center;
-        background-color: rgba(0,0,0,0.25);
-        line-height: 100px;
-       cursor: pointer;
-        height: 100px;
-        width: 100px;
-        font-size: 60px;
-        color: #ccc;
-        
-    }
-}
-/* xuất hiện button-next */
-.background__img-clicknext{
-    display: none;
-    animation: Fade-in 0.4s linear;
-}
-.background__img-wrap{
-    &:hover{
-        .background__img-clicknext{
-
-            display: flex;
-        }
-    }
-}
-/* end xuất hiện button-next */
-.background__seach-top{
-
-    position: absolute;
-    top: 68%;
-    left: 13.6%;
-   // left: 0;
-    width: 338px;
-    height: 56px;
-   // transform: translateX(-50%);
-    background-color: #1bbc9b;
-    .background__seach-top-list{
-        width: 100%;
-        height: 100%;
-        display: flex;
-    }
-    //active thi co mau
-    .background__seach-top-iteam{
-        cursor: pointer;
-       display: flex;
-        flex: 1;
-       align-items: center;
-       justify-content: center;
-        color: #fff;
-        background-color: var(--color-black-popular);
-        font-size: 15px;
-        .bx-search{
-            margin-left: -30px;
-            margin-right: 10px;
-            left: 0;
-            font-size: 20px;
-           
-           
-            
-            
-        }
-        .bx-candles{
-            margin-left: -58px;
-            margin-right: 10px;
-            left: 0;
-            font-size: 20px;
-        }
-    }
-    .background__seach-top-iteam.active{
-        background-color: #1bbc9b;
-    }
-}
-
-.background__seach-bottom,.background__seach-bottom--active{
-    position: absolute;
-    //height: 80px;
-    min-height: 80px;
-    top: 77%;
-   left: 13.6%;
-  width: 74%;
-  background-color: var(--color-black-popular);
-  //điều chỉnh cho mấy cái iteam căn giữa
-  justify-content: center;
-  /* display: flex; */
-  display: flex;
-  flex-direction: column;
-  padding: 0 20px;
+                           <li class="background__seach-bottom-iteam"><input type="text" placeholder="Insert keyword"></li>
+                       </div>
+                       <div class="col l-3 c-12 m-12 mobile__tablet">
+                        <li class="background__seach-bottom-iteam"><input type="text" placeholder="All Destinations"></li>
+                           
+                     </div>
+                     <div class="col l-3 c-12 m-12 mobile__tablet">
+                        <li class="background__seach-bottom-iteam"><input type="text" placeholder="All Typologies"></li>
+                           
+                     </div>
+                     <div class="col l-3 c-12 m-12 mobile__tablet">
+                        <li class="background__seach-bottom-iteam"><input type="text" placeholder="SEARCH"></li>
+                           
+                     </div>
+                    </div>
+                 </div>
+                <div class="background__seach-bottom--active">
+                    <div class="row ">
+                        <div class="col l-3 c-12 m-12 mobile__tablet">
+                            <li class="background__seach-bottom-iteam"><input type="text" placeholder="Insert keyword"></li>
+                        </div>
+                        <div class="col l-3 c-12 m-12 mobile__tablet">
+                            <li class="background__seach-bottom-iteam"><input type="text" placeholder="All Destinations"></li>
+                      </div>
+                      <div class="col l-3 c-12 m-12 mobile__tablet">
+                        <li class="background__seach-bottom-iteam"><input type="text" placeholder="All Typologies"></li>
+                      </div>
+                      <div class="col l-3 c-12 m-12 mobile__tablet">
+                        <li class="background__seach-bottom-iteam"><input type="text" placeholder="All Durations"></li>
+                      </div>
+                     </div>
+                    <div class="row">
+                        <div class="col l-3 c-12 m-12 mobile__tablet">
+                        <li class="background__seach-bottom-iteam iteam--margin"><input type="text" placeholder="All Difficulty"></li>
+                        </div>
+                        <div class="col l-3 c-12 m-12 mobile__tablet">
+                        <li class="background__seach-bottom-iteam"><input type="text" placeholder="All Min Age"></li>
+                        </div>
+                        <div class="col l-6 c-12 m-12 mobile__tablet">
+                        <li class="background__seach-bottom-iteam"><input type="text" placeholder="SEARCH"></li>
+                        </div>
+                    </div>
+                </div>
+        </div>
 
 
+        <!-- start Top Promotions -->
+        <div class="Top-Promotions">
 
-        .background__seach-bottom-iteam{
-            height: 42px;
-            line-height: 42px;
-             text-align: center;
-            background-color: #4a515b;
-            color: #99999b;
-            &.only--color{
-                background-color: #1bbc9b;
-                color: #fff;
-            }
-            input{
-                display: block;
-                background-color: #4a515b;
-                width: 100%;
-                height: 100%;
-                outline: none;
-                border: none;
-                padding-left:  20px;
-                padding-right:  20px;
-                &::placeholder{
-                    height: 42px;
-                    line-height: 42px;
-                    text-align: center;
-                    font-size: 16px;
-                    color: #99999b;
-                   
-                }
+            <div class="grid wide-promotion">
+                <div class="row container"><!-- toàn bộ sản phẩm  -->
 
-          
-            }
-        
-        }
-    
-}
-.background__seach-bottom--active{
-   display: none;
-  
-    .background__seach-bottom-iteam{
+
+                    <!-- start thẻ produc -->
+                    <div class="col l-4 m-12 c-12">
+                        <div class="Top-Promotions__iteam">
+                                <div class="Top-Promotions__iteam-img" style="background-image: url(./img/top-promise/pro1.jpg);">
+                                    <!-- background img -->
+                                    <div class="Top-Promotions__iteam-price">700 $</div>
+                                </div>
+                                <a href="" class="Top-Promotions__iteam-link">
+                                    <div class="Top-Promotions__iteam-head">Dubai</div>
+                                    <div class="Top-Promotions__iteam-location color-1">
+                                        <div class="iteam-location-name">Asia</div>
+                                        <div class="iteam-location-attribute">Sport</div>
+                                    </div>
+                                </a>
+                                <div class="Top-Promotions__iteam-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor autem veritatis sint corrupti dolorem est in sapiente</div>
+                                <div class="Top-Promotions__iteam-details">DETAILS</div>
+                            </div>
+
+                            <!-- price -->
+                            
+                    </div>
+                    <!-- end thẻ produc -->
+                      <!-- start thẻ produc -->
+                      <div class="col l-4 m-12 c-12">
+                        <div class="Top-Promotions__iteam">
+                                <div class="Top-Promotions__iteam-img" style="background-image: url(./img/top-promise/pro2.jpg);">
+                                    <div class="Top-Promotions__iteam-price">900 $</div>
+                                   
+                                </div>
+                                <a href="" class="Top-Promotions__iteam-link">
+                                    <div class="Top-Promotions__iteam-head">Dubai</div>
+                                    <div class="Top-Promotions__iteam-location color-2">
+                                        <div class="iteam-location-name">Asia</div>
+                                        <div class="iteam-location-attribute">Sport</div>
+                                    </div>
+                                </a>
+                                <div class="Top-Promotions__iteam-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor autem veritatis sint corrupti dolorem est in sapiente</div>
+                                <div class="Top-Promotions__iteam-details">DETAILS</div>
+                            </div>
+
+                    </div>
+                    <!-- end thẻ produc -->
+                      <!-- start thẻ produc -->
+                      <div class="col l-4 m-12 c-12">
+                        <div class="Top-Promotions__iteam">
+                                <div class="Top-Promotions__iteam-img" style="background-image: url(./img/top-promise/pro3.jpg);">
+                                    <!-- background img -->
+                                    <!-- ảnh  -->
+                                    <div class="sale">SALE</div><!-- position cho dễ  -->
+                                    <!-- giá cả  -->
+                                 <!--    <div class="Top-Promotions__iteam-price"></div> -->
+                                </div>
+                                <a href="" class="Top-Promotions__iteam-link">
+                                    <div class="Top-Promotions__iteam-head">Dubai</div>
+                                    <div class="Top-Promotions__iteam-location color-3 "><!-- có thêm cái sale  -->
+                                        <div class="iteam-location-name">Asia</div>
+                                        <div class="iteam-location-attribute">Sport</div>
+                                    </div>
+                                </a>
+                                <div class="Top-Promotions__iteam-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor autem veritatis sint corrupti dolorem est in sapiente</div>
+                                <div class="Top-Promotions__iteam-details">DETAILS</div>
+                            </div>
+
+                    </div>
+                    <!-- end thẻ produc -->
+                      <!-- start thẻ produc -->
+                      <div class="col l-4 m-12 c-12">
+                        <div class="Top-Promotions__iteam">
+                                <div class="Top-Promotions__iteam-img" style="background-image: url(./img/top-promise/pro4.jpg);">
+                                    <!-- background img -->
+                                  <!--   <div class="Top-Promotions__iteam-price"></div> -->
+                                </div>
+                                <a href="" class="Top-Promotions__iteam-link">
+                                    <div class="Top-Promotions__iteam-head">Dubai</div>
+                                    <div class="Top-Promotions__iteam-location color-4">
+                                        <div class="iteam-location-name">Asia</div>
+                                        <div class="iteam-location-attribute">Sport</div>
+                                    </div>
+                                </a>
+                                <div class="Top-Promotions__iteam-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor autem veritatis sint corrupti dolorem est in sapiente</div>
+                                <div class="Top-Promotions__iteam-details">DETAILS</div>
+                            </div>
+
+                    </div>
+                    <!-- end thẻ produc -->
+                      <!-- start thẻ produc -->
+                      <div class="col l-4 m-12 c-12">
+                        <div class="Top-Promotions__iteam">
+                                <div class="Top-Promotions__iteam-img" style="background-image: url(./img/top-promise/pro5.jpg);">
+                                    <!-- background img -->
+                                 <!--    <div class="Top-Promotions__iteam-price"></div> -->
+                                </div>
+                                <a href="" class="Top-Promotions__iteam-link">
+                                    <div class="Top-Promotions__iteam-head">Dubai</div>
+                                    <div class="Top-Promotions__iteam-location color-5">
+                                        <div class="iteam-location-name">Asia</div>
+                                        <div class="iteam-location-attribute">Sport</div>
+                                    </div>
+                                </a>
+                                <div class="Top-Promotions__iteam-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor autem veritatis sint corrupti dolorem est in sapiente</div>
+                                <div class="Top-Promotions__iteam-details">DETAILS</div>
+                            </div>
+
+                    </div>
+                    <!-- end thẻ produc -->
+                      <!-- start thẻ produc -->
+                      <div class="col l-4 m-12 c-12">
+                        <div class="Top-Promotions__iteam">
+                                <div class="Top-Promotions__iteam-img" style="background-image: url(./img/top-promise/pro6.jpg);">
+                                    <!-- background img -->
+                                  <!--   <div class="Top-Promotions__iteam-price"></div> -->
+                                </div>
+                                <a href="" class="Top-Promotions__iteam-link">
+                                    <div class="Top-Promotions__iteam-head">Dubai</div>
+                                    <div class="Top-Promotions__iteam-location color-6">
+                                        <div class="iteam-location-name">Asia</div>
+                                        <div class="iteam-location-attribute">Sport</div>
+                                    </div>
+                                </a>
+                                <div class="Top-Promotions__iteam-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor autem veritatis sint corrupti dolorem est in sapiente</div>
+                                <div class="Top-Promotions__iteam-details">DETAILS</div>
+                            </div>
+
+                        </div>
+                    <!-- end thẻ produc -->
+                    
+                </div> 
+            </div>
+        </div>
+
+
+        <!-- end Top Promotions -->
+
+        <!-- 2 thanh all packgage và promotion -->
+        <div class="under-Promotions">
+            <button class="under-Promotions-iteam">ALL PACKGES</button>
+            <button class="under-Promotions-iteam">PROMOTIONS</button>
+        </div>
+        <div class="banner-infor-wrap">
+            <div class="banner-infor " >
+                <img src="./img/midd-ful.jpg" alt="">
+            </div>
+            <div class="banner-infor__list">
+                <div class="banner-infor__iteam">SUMMER PROMOTION</div>
+                <div class="banner-infor__iteam">SANTORINI - 
+                    GREEK ISLAND TOUR
+                </div>
+                <div class="banner-infor__iteam">1000 $ for person - 6 nights</div>
+                <div class="banner-infor__btn">
+                    <a href="">MORE DETAILS</a>
+                </div>
+            </div>
+        </div>
+        <!-- OUR DESTINATIONS -->
+        <div class="ourDestinations">
+            <h1>OUR DESTINATIONS</h1>
+            <h2>CHOOSE YOUR NEXT DESTINATION</h2>
+            <div class="grid wide-promotion">
+                <div class="row container">
+                    <!-- start ourDestinations-iteam -->
+                    <div class="ourDestinations-iteam">
+                        <div class="col l-3 c-12 m-12">
+                                <img src="./img/OUR-Destination/1.jpg" alt="">
+                        </div>
+                        <div class="ourDestinations-iteam-name"><a href="#">OCENAIA</a></div>
+                    </div>
+                    <!-- end ourDestinations-iteam -->
+                    <!-- start ourDestinations-iteam -->
+                    <div class="ourDestinations-iteam">
+                        <div class="col l-3 c-12 m-12">
+                                <img src="./img/OUR-Destination/2.jpg" alt="">
+                        </div>
+                        <div class="ourDestinations-iteam-name"><a href="#">AFRICA</a></div>
+                    </div>
+                    <!-- end ourDestinations-iteam -->
+                    <!-- start ourDestinations-iteam -->
+                    <div class="ourDestinations-iteam">
+                        <div class="col l-3 c-12 m-12">
+                                <img src="./img/OUR-Destination/3.jpg" alt="">
+                        </div>
+                        <div class="ourDestinations-iteam-name"><a href="#">AMERICA</a></div>
+                    </div>
+                    <!-- end ourDestinations-iteam -->
+                    <!-- start ourDestinations-iteam -->
+                    <div class="ourDestinations-iteam">
+                        <div class="col l-3 c-12 m-12">
+                                <img src="./img/OUR-Destination/4.jpg" alt="">
+                        </div>
+                        <div class="ourDestinations-iteam-name"><a href="#">ASIA</a></div>
+                    </div>
+                    <!-- end ourDestinations-iteam -->
+                </div>
+            </div>
+        </div>
+
+       <script src="./js/menu.js"></script>
+       
       
-      margin-top: 20px;
-     
-    }
-   .iteam--margin{
-       margin-bottom: 20px;
-   }
- 
-   animation: move-top .3s ease-out;
-}
-@keyframes move-top{
-    from{
-        top :82%;
-        opacity: 0;;
-    }
-    to{
-        top: 77%;
-        opacity: 1;
-    }
-}
-
-
-//top Promi
-
-.Top-Promotions{
-    --space-left-item:16px;
-    position: relative;
-}
-.Top-Promotions__iteam{
-    border: solid 1px #f3f3f3;
-    margin-bottom: 20px;   
-    
-}
-.Top-Promotions__iteam-img{
-    position: relative;
-    padding-top: 65%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top,center;
-    overflow: hidden;
-    //sale 
-    .sale{
-        width: 124px;
-        height: 26px;
-        position: absolute;/* chả của cái thằng này là cái  */
-        background: #434a54;
-        color: #fff;
-        font-size: 14px;
-        text-align: center;
-        line-height: 26px;
-        top: 22px;
-        right: -24px;
-        transform: rotate(45deg);
-
-    }
-}
-
-.Top-Promotions__iteam-link{
-    display: block;
-   
-
-}
-.Top-Promotions__iteam-head{
-    height: 60px;
-    background: var(--color-black-popular);
-    font-size: 22px;
-    color: #fff;
-    line-height: 60px;
-    padding-left: var(--space-left-item);
-}
-.Top-Promotions__iteam-location{
-    display: flex;
-    align-items: center;
-   color: #fff;
-    line-height: 40px;
-    .iteam-location-name{
-        flex: 1;
-        background-color: #ffd205;
-        padding-left: var(--space-left-item);
-        height: 100%;
-    }
-    .iteam-location-attribute{
-        flex: 1;
-        background-color: #ffd71e;
-        padding-left: var(--space-left-item);
-
-    }
-    &.color-2{ //chấm kiểu này ko phải là con đâu phân biệt ra 
-        .iteam-location-name{
-            background-color: #f3a46b;
-        }
-        .iteam-location-attribute{
-            background-color: #f4ad7a;
-        }
-    }
-   
-}
-.Top-Promotions__iteam-content{
-    padding: 0 var(--space-left-item);
-    color: #b2aeaa;
-    margin: 26px 0;
-}
-.Top-Promotions__iteam-details{
-    margin-left: var(--space-left-item);
-    margin-bottom: 20px;
-    width: 100px;
-    height: 50px;
-    border:  solid 1px #f3f3f3;
-    text-align: center;
-    line-height: 50px;
-    color: #ccc;
-
-}
-.Top-Promotions__iteam-price{
-    position: absolute;
-    top: 0;
-    width: 80px;
-    height: 48px;
-    line-height: 48px;
-    background-color: #fff;
-    color: #b1b1b1;
-    border-top:solid 1px #f3f3f3;
-    border-left: solid 1px #f3f3f3;
-    text-align: center;
-}
-/* under Promotions  */
-.under-Promotions{
-    display: flex;
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 66px;
-    max-height: 144px;
-    align-items: center;
-    justify-content: center;
-    .under-Promotions-iteam{
-        color: #fff;
-        font-size: 16px;
-        margin-right: 40px;
-        background-color: #434a54;
-        width: 148px;
-        height: 46px;
-        line-height: 46px;
-        text-align: center;
-        cursor: pointer;
-    }
-}
-.banner-infor-wrap{
-    position: relative;
-    margin-bottom: 30px;
-    height: 416px;
-    max-height: 416px;
-    width: 100%;
-   position: relative;
-}
-.banner-infor{
-    height: 100%;
-    background-color: #00000040;
-    position: relative;
-    background-position: top,center;
-    img{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        position: absolute;
-        z-index: -1; //tạo lớp nền 
-    }
-}
-.banner-infor__list{
-    margin-top: 100px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate((-50%));
-    width: 500px;
-    text-align: center;
-    color: #fff;
-    .banner-infor__iteam{
-        margin-bottom: 30px;
-    }
-    .banner-infor__iteam:first-child{
-        margin-bottom: 36px;
-        font-size: 24px;
-        position: relative;
-        &::before{
-            content: " ";
-            position: absolute;
-            width: 40px;
-            height: 2px;
-            bottom: -50%;
-            left: 50%;
-            background-color: #fff;
-            transform: translateX(-50%);
-        }
-    }
-    .banner-infor__iteam:nth-child(2){
-        font-size: 30px;
-        margin-bottom: 10px;
-    }
-    .banner-infor__iteam:nth-child(3){
-        font-size: 20px;
-    }
-    .banner-infor__btn{
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 170px;
-        height: 36px;
-        font-size: 20px;
-      
-        background-color: #14b9d5;
-        line-height: 36px;
-        a{
-            display: block;
-            color: #fff;
-        }
-    }
-}
-
-/* <!-- OUR DESTINATIONS --> */
-.ourDestinations{
-    margin: 60px 0px 70px 0px;
-    h1,h2{
-            
-        color: #5e6d81;
-        text-align: center;
-        font-weight: 400;
-        margin-bottom: 20px;
-    }
-    h2{
-      color: #aeb0ad;
-        margin-bottom: 56px;
-        font-weight: 100;
-    }
-}
-.ourDestinations-iteam{
-    position: relative;
-    img{
-        width: 268px;
-        height: 396px;
-        object-fit: contain;
-    
-
-    }
-    .ourDestinations-iteam-name{
-       --height-ourDestinations-iteam-name : 48px;
-        position: absolute;
-        width: 108px;
-        height: var(--height-ourDestinations-iteam-name);
-        top: 2px;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: #ffffff;
-        border-top: 1px solid rgb(241, 236, 236);
-        a{
-            font-size: 14px;
-            color: #adacb3;
-            text-align: center;
-            display: block;
-           line-height: var(--height-ourDestinations-iteam-name);
-        }
-    }
-}
+</body>
+</html>
