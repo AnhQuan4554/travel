@@ -46,6 +46,25 @@
     .col.mobile__tablet{
         padding-top: 20px;
     }
+    /* phần số lượng ở trên package */
+    .statistics-quantity{
+        height: 646px;
+        overflow: hidden;
+        .statistics-quantity-img{
+           background-position: top,center;
+            transform: scale(1.5);
+            
+        }
+        .statistics-quantity-list{
+            flex-direction: column;
+            .statistics-quantity-iteam{
+               margin: 0 0 30px 0 ;
+            }
+        }
+    }
+
+
+    
 }
 
 //tablet
