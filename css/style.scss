@@ -794,9 +794,11 @@ overflow: hidden;
 }
 .ourDestinations-iteam{
     position: relative;
+  /*   min-width: 268px;
+    min-height: 396px; */
     img{
-        width: 268px;
-        height: 396px;
+        width: 100%;
+        height: 100%;
         object-fit: contain;
     
 
@@ -817,6 +819,152 @@ overflow: hidden;
             text-align: center;
             display: block;
            line-height: var(--height-ourDestinations-iteam-name);
+        }
+    }
+}
+
+/* start Hiện thống kế số lượng  */
+
+.statistics-quantity{
+    .background--color{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #484848;
+        width: 100%;
+        height: 100%;
+    }
+    height: 280px;
+    min-height: 280px;
+    position: relative;
+   
+    .statistics-quantity-img{
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+       
+        background-position-y: -50px;
+        background-color: #000;
+        background-repeat: no-repeat;
+        opacity: .9;
+    }
+    .statistics-quantity-list{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% ,-50%) ;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .statistics-quantity-iteam{
+            text-align: center;
+            color: #fff;
+            margin-right: 150px;
+            min-width: 132px;
+            &:last-child{
+                margin-right: 0;
+            }
+            .iteam-number{
+                font-size: 50px;
+                font-weight: 400;
+            }
+            .iteam-name{
+               font-size: 16px;
+               height: 30px;
+               min-height: 30px;
+               padding: 2px 5px 2px 5px ;
+            }
+        }
+    }
+}
+
+
+/* start Packeges */
+.Packages{
+    margin-top: 60px;
+    margin-bottom: 2000px;
+    .Packages-head{
+        text-align: center;
+        display: block;
+        font-size: 30px;
+        color: #5e6f89;
+        margin-bottom: 10px;
+    }
+    .Packages-head2{
+        font-size: 24px;
+        color: #a6a8a8;
+        text-align: center;
+        display: block;
+        position: relative;
+        margin-bottom: 56px;
+        &::after{
+            content: "";
+            position: absolute;
+            width:  80px;
+            height: 5px;
+            background: #f1f1f1;
+           
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+        }
+    
+.Packages-catagory-title{
+    background-color: #434a54;
+   --heght-Packages-catagory-title : 56px;
+    height: var(--heght-Packages-catagory-title);
+    display: flex;
+    color: #fff;
+    text-align: center;
+    .Packages-catagory-title-iteam.active{
+        background-color: #1bbc9b;
+    }
+    .Packages-catagory-title-iteam{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        line-height: var(--heght-Packages-catagory-title);
+        padding: 0 12px 0 12px;
+        i{
+            margin: 12px;
+            font-size: 20px;
+        }
+    }
+}
+.Packages-catagory-input{
+    background-color:#434a54 ;
+    padding: 30px 20px 30px 20px;
+    .Packages-catagory-input-list{
+        text-align: center;
+        .Packages-catagory-input-iteam{
+            width: 100%;
+            background-color: #4a515b;
+          height: 40px;
+            margin-bottom: 20px;
+            outline: none;
+            border: none;
+            &:last-child{
+                height: 160px;
+            }
+          &::placeholder{
+               padding-left: 14px;
+               color: #898780;
+            }
+        }
+        //btn
+        .Packages-catagory-input-btn{
+            text-align: center;
+            width: 180px;
+            height: 52px;
+            line-height: 52px;
+            background-color: #1bbc9b;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
         }
     }
 }
